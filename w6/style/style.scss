@@ -1,0 +1,371 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  color: #39342f;
+}
+.section {
+  max-width: 59.75rem;
+  margin: auto;
+}
+.head {
+  //   background-color: grey;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+  height: 108px;
+  a {
+    margin: 0;
+  }
+  //   로고 아래???
+  align-items: center;
+  .search {
+    display: flex;
+    align-items: center;
+    position: relative;
+    #input_form {
+      width: 14rem;
+      height: 2rem;
+      padding-left: 12px;
+      border: 2.25px solid #39342f;
+      font-size: 14px;
+    }
+    #input_form:focus {
+      outline: none;
+    }
+    .material-symbols-outlined {
+      background-color: #39342f;
+      position: absolute;
+      height: 32px;
+      padding: 4px;
+      color: hsla(0, 0%, 100%, 0.92);
+      right: 0px;
+    }
+  }
+}
+
+.top_bar {
+  background-color: #39342f;
+  padding-left: 1.75rem;
+  padding-block: 14px;
+  display: flex;
+  gap: 24px;
+
+  a {
+    color: hsla(0, 0%, 100%, 0.92);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  hr {
+    border-left: thin solid
+      hsla(0, 0%, 100%, 0.92);
+    border-right: 0;
+  }
+}
+
+.categories {
+  max-width: 710px;
+  .category {
+    padding-top: 32px;
+    padding-bottom: 12px;
+    hr {
+      margin-block: 4px;
+      border-top: 2px solid #39342f;
+      border-bottom: 0;
+    }
+    .bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .title {
+        font-weight: 600;
+        color: #39342f;
+      }
+      #title {
+        display: flex;
+        gap: 16px;
+        a {
+          text-decoration: none;
+          color: #39342f;
+        }
+        &_best {
+          opacity: 40%;
+        }
+      }
+      .arrow {
+        display: flex;
+        color: hsla(0, 0%, 100%, 0.92);
+        gap: 1.5px;
+        p {
+          background-color: #39342f;
+          padding: 1px 6px;
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+// 공지사항
+.nts {
+  .nt {
+    background-color: hsla(30, 10%, 20%, 0);
+    display: flex;
+    padding: 8px 20px;
+    justify-content: space-between;
+    align-items: center;
+
+    &_category {
+      font-weight: 600;
+      font-size: 14px;
+    }
+    &_title {
+      width: 443px;
+      font-size: 14px;
+      //   font-weight: 300;
+    }
+    .txt_light {
+      font-size: 13px;
+    }
+    &_date {
+      font-weight: 200;
+      opacity: 60%;
+    }
+    &_view {
+      font-weight: 300;
+      color: red;
+    }
+  }
+}
+// 한 주의 베스트
+.best {
+  .brds {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    .brd {
+      display: flex;
+      width: 224px;
+      height: 142px;
+      img {
+        position: absolute;
+        width: 224px;
+        height: 142px;
+        object-fit: cover;
+      }
+      .brd_txt {
+        background-color: hsla(
+          30,
+          10%,
+          20%,
+          0.82
+        );
+        position: relative;
+        bottom: -88px;
+        width: 224px;
+        height: 54px;
+        display: flex;
+        padding-top: 1.95px;
+        //   align-items: center;
+        p {
+          padding: 8px 16px;
+          font-size: 14px;
+          color: rgb(255, 255, 255);
+        }
+      }
+    }
+  }
+}
+
+.gals {
+  // background-color: yellow;
+  .gal {
+    display: flex;
+    align-items: center;
+    // padding-inline: 20px;
+    // padding-bottom: 4px;
+    padding: 12px 20px;
+    gap: 24px;
+    img {
+      width: 108px;
+      height: 64px;
+      object-fit: cover;
+    }
+    .gal_txts {
+      .gal_txt {
+        display: flex;
+        gap: 12px;
+        font-size: 14px;
+      }
+      .gal_view {
+        font-weight: 300;
+        color: orangered;
+      }
+      .gal_etc {
+        padding-top: 4px;
+        font-size: 12px;
+        font-weight: 200;
+        opacity: 60%;
+      }
+    }
+  }
+}
+
+.second {
+  display: flex;
+  justify-content: space-between;
+
+  // 로그인
+  .login-wrapper {
+    width: 232px;
+    height: 212px;
+    margin-top: 12px;
+    padding: 20px 16px;
+    box-sizing: border-box;
+    border: 1px solid hsla(30, 10%, 20%, 0.25);
+    // border-radius: 8px;
+    // img {
+    //   display: flex;
+    //   align-items: center;
+    //   width: 200px;
+    //   margin: auto;
+    //   padding-bottom: 8px;
+    // }
+  }
+}
+
+.logoo img {
+  width: 200px;
+  display: flex;
+  margin: auto;
+  padding-top: 28px;
+}
+.login-wrapper > h2 {
+  color: #39342f;
+  //   margin-bottom: 20px;
+}
+#login-form > input {
+  width: 100%;
+  height: 40px;
+  padding: 0px 12px;
+  box-sizing: border-box;
+  margin-bottom: 4px;
+  border: 1px solid #39342f;
+  //   border-radius: 6px;
+  background-color: hsla(0, 0%, 100%, 0.92);
+}
+#login-form > input::placeholder {
+  color: #d2d2d2;
+}
+#login-form > input[type="submit"] {
+  color: hsla(0, 0%, 100%, 0.92);
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #39342f;
+  margin-top: 20px;
+}
+
+#login-form > input[type="checkbox"] {
+  display: none;
+}
+#login-form > label {
+  color: #999999;
+  font-size: 12px;
+}
+#login-form input[type="checkbox"] + label {
+  cursor: pointer;
+  //   padding-left: 26px;
+  background-image: url("checkbox.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#login-form
+  input[type="checkbox"]:checked
+  + label {
+  background-image: url("checkbox-active.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.rank {
+  margin-top: 16px;
+  padding-inline: 16px;
+  border: 1px solid #39342f;
+  &_title {
+    padding-block: 16px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  hr {
+    padding-bottom: 16px;
+    border-bottom: 0;
+    border-inline: 0;
+    border-top: dashed 1px #39342f;
+  }
+  &_lists {
+    .list {
+      padding-bottom: 8px;
+      justify-content: space-between;
+      display: flex;
+      gap: 8px;
+      font-size: 12px;
+      .list_txt {
+        display: flex;
+        gap: 8px;
+      }
+      .list_right {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        .list_n {
+          font-size: 11px;
+          opacity: 60%;
+        }
+        .list_n_m {
+          position: relative;
+          right: -2px;
+          opacity: 60%;
+        }
+        .list_arrow_up {
+          rotate: 90deg;
+          padding-top: 1px;
+          font-weight: 600;
+          color: orangered;
+        }
+        .list_arrow_down {
+          rotate: -90deg;
+          font-weight: 600;
+          color: blue;
+        }
+        .list_arrow_m {
+          padding-right: 1px;
+          font-size: 12px;
+          font-weight: 600;
+          opacity: 60%;
+        }
+      }
+      .numb {
+        background-color: #39342f;
+        padding: 1px 4px;
+        color: hsla(0, 0%, 100%, 0.92);
+      }
+    }
+  }
+  .rank_etc {
+    text-align: right;
+    padding-bottom: 16px;
+    a {
+      font-size: 12px;
+      color: hsla(30, 10%, 20%, 0.6);
+    }
+  }
+}

@@ -1,0 +1,138 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  color: #39342f;
+}
+.section {
+  max-width: 59.75rem;
+  margin: auto;
+}
+.head {
+  //   background-color: grey;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+  height: 108px;
+  a {
+    margin: 0;
+  }
+  //   로고 아래???
+  align-items: center;
+  .search {
+    display: flex;
+    align-items: center;
+    position: relative;
+    #input_form {
+      width: 14rem;
+      height: 2rem;
+      padding-left: 12px;
+      border: 2.25px solid #39342f;
+      font-size: 14px;
+    }
+    #input_form:focus {
+      outline: none;
+    }
+    .material-symbols-outlined {
+      background-color: #39342f;
+      position: absolute;
+      height: 32px;
+      padding: 4px;
+      color: hsla(0, 0%, 100%, 0.92);
+      right: 0px;
+    }
+  }
+}
+
+.top_bar {
+  background-color: #39342f;
+  padding-left: 1.75rem;
+  padding-block: 14px;
+  display: flex;
+  gap: 24px;
+
+  a {
+    color: hsla(0, 0%, 100%, 0.92);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  hr {
+    border-left: thin solid
+      hsla(0, 0%, 100%, 0.92);
+    border-right: 0;
+  }
+}
+
+.board {
+  .titles {
+    .bar {
+      margin-top: 20px;
+      p {
+        padding-block: 12px;
+        font-size: 24px;
+        font-weight: 600;
+      }
+    }
+    .nts {
+      #nt_title {
+        font-weight: 500;
+        padding-block: 8px;
+      }
+      .nt_second {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 16px;
+        hr {
+          border-width: 0px;
+          height: 10px;
+          border-left: 1px solid #39342f;
+          border-right: 0px;
+        }
+        .nt {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          &_title_etc {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+          }
+        }
+      }
+    }
+    .nt_etc {
+      font-size: 12px;
+    }
+
+    hr {
+      border-top: 2px solid #39342f;
+      border-bottom: 0;
+    }
+  }
+  .contents {
+    .txt {
+      padding-bottom: 24px;
+      font-size: 14px;
+      line-height: 12px;
+    }
+    .txt1 {
+      padding-top: 40px;
+    }
+    .txt2 {
+      padding-bottom: 180px;
+    }
+    .w660 {
+      width: 660px;
+      padding-bottom: 24px;
+    }
+  }
+}
