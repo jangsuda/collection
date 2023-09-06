@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@function size-calc($base) {
+  $value: calc(#{$base} * (100vw / 1440));
+  @return $value;
+}
 *,
 *::before,
 *::after {
@@ -39,7 +45,7 @@ body {
 
     .nav__logo,
     a {
-      font-family: "Montserrat";
+      font-family: "Montserrat", sans-serif;
       font-weight: 700;
       font-size: 1.5rem;
       text-align: center;
@@ -106,13 +112,13 @@ body {
   letter-spacing: -0.02em;
   color: #1f1b16;
   h1 {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 3.375rem;
   }
   p {
     $p-block-val: 2.5rem;
-    font-family: "Apple SD Gothic Neo";
+    font-family: "Spoqa Han Sans Neo", "sans-serif";
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 2rem;
@@ -120,7 +126,7 @@ body {
     padding-bottom: $p-block-val + 1.25rem;
   }
   a {
-    font-family: "Apple SD Gothic Neo";
+    font-family: "Spoqa Han Sans Neo", "sans-serif";
     font-weight: 700;
     font-size: 1.25rem;
     // letter-spacing: -0.02em;
@@ -144,7 +150,7 @@ body {
   color: #1f1b16;
   h1 {
     text-transform: capitalize;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 3.375rem;
     margin-bottom: 4.5rem;
@@ -190,23 +196,26 @@ body {
     color: #fff8f1;
     h1 {
       text-transform: capitalize;
-      font-family: "Montserrat";
+      font-family: "Montserrat", sans-serif;
       font-weight: 700;
       font-size: 3.375rem;
     }
   }
 }
+
 .about__news {
   text-align: center;
   letter-spacing: -0.02em;
   color: #1e1a1b;
   h1 {
     text-transform: capitalize;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 3.375rem;
+    margin-bottom: 4.5rem;
   }
 }
+
 .about__servicelink {
   height: 41.5rem;
   background-color: #d7d7d7;
@@ -214,22 +223,22 @@ body {
   letter-spacing: -0.02em;
   color: #1e1a1b;
   h1 {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    font-size: 3.375rem;
+    font-size: 4.25rem;
     padding-top: 11.25rem;
   }
   p {
     $p-block-value: 1.5rem;
-    font-family: "Apple SD Gothic Neo";
-    font-weight: 700;
+    font-family: "Spoqa Han Sans Neo", "sans-serif";
+    font-weight: 600;
     font-size: 3rem;
     line-height: 64px;
-    padding-top: $p-block-value * 3;
+    // padding-top: $p-block-value;
     padding-bottom: $p-block-value;
   }
   a {
-    font-family: "Apple SD Gothic Neo";
+    font-family: "Spoqa Han Sans Neo", "sans-serif";
     font-weight: 700;
     font-size: 1.25rem;
     letter-spacing: -0.02em;

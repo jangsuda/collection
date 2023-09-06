@@ -74,7 +74,7 @@ h1 {
   white-space: nowrap;
   transform: translate(-50%, 0);
 }
-.works ul li a img {
+.works ul li a .box {
   width: 3rem;
   height: 3rem;
 }/*# sourceMappingURL=style.css.map */

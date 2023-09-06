@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 *,
 *::before,
 *::after {
@@ -41,7 +43,7 @@ body {
 }
 .nav .buttonWrapper .nav__logo,
 .nav .buttonWrapper a {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
   text-align: center;
@@ -96,19 +98,19 @@ body {
   color: #1f1b16;
 }
 .about__info h1 {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 3.375rem;
 }
 .about__info p {
-  font-family: "Apple SD Gothic Neo";
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 2rem;
   padding-bottom: 3.75rem;
 }
 .about__info a {
-  font-family: "Apple SD Gothic Neo";
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
   font-weight: 700;
   font-size: 1.25rem;
   color: #fff8f1;
@@ -131,7 +133,7 @@ body {
 }
 .about__hover h1 {
   text-transform: capitalize;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 3.375rem;
   margin-bottom: 4.5rem;
@@ -178,7 +180,7 @@ body {
 }
 #history .about__history h1 {
   text-transform: capitalize;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 3.375rem;
 }
@@ -190,9 +192,10 @@ body {
 }
 .about__news h1 {
   text-transform: capitalize;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 3.375rem;
+  margin-bottom: 4.5rem;
 }
 
 .about__servicelink {
@@ -203,21 +206,20 @@ body {
   color: #1e1a1b;
 }
 .about__servicelink h1 {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 3.375rem;
+  font-size: 4.25rem;
   padding-top: 11.25rem;
 }
 .about__servicelink p {
-  font-family: "Apple SD Gothic Neo";
-  font-weight: 700;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  font-weight: 600;
   font-size: 3rem;
   line-height: 64px;
-  padding-top: 4.5rem;
   padding-bottom: 1.5rem;
 }
 .about__servicelink a {
-  font-family: "Apple SD Gothic Neo";
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
   font-weight: 700;
   font-size: 1.25rem;
   letter-spacing: -0.02em;
