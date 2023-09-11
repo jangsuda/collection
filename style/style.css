@@ -1,17 +1,26 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 *,
 *::after,
 *::before {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body {
-  margin: 0;
+html {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */ /* 인터넷익스플로러 */
+  -moz-user-select: none;
+       user-select: none;
 }
 
 h1 {
+  color: #000;
   text-align: center;
   padding-top: 10rem;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 4.5rem;
   opacity: 88%;
 }
@@ -31,13 +40,14 @@ h1 {
   text-align: center;
 }
 .search #name {
-  background-color: lightgray;
+  background-color: #d3d3d3;
   width: 100%;
   height: 2.75rem;
   padding-inline: 3.5rem;
   border-radius: 62.4375rem;
   border: 0;
   font-size: 18px;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
 }
 .search #name:focus {
   outline: solid;
@@ -62,8 +72,8 @@ h1 {
   position: relative;
   padding-bottom: 2rem;
   margin-inline: 0;
-  color: black;
-  opacity: 80%;
+  color: #000;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
 }
 .works ul li a span {
   position: absolute;
@@ -75,7 +85,17 @@ h1 {
   transform: translate(-50%, 0);
 }
 .works ul li a .box {
-  background-color: grey;
-  width: 3rem;
-  height: 3rem;
+  display: flex;
+  align-items: center;
+  background-color: #d3d3d3;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 999px;
+}
+.works ul li a img {
+  display: flex;
+  margin: auto;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 1px;
 }/*# sourceMappingURL=style.css.map */

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 *,
 *::after,
@@ -10,10 +11,20 @@
 body {
   font-family: "Spoqa Han Sans Neo", "sans-serif";
   color: #39342f;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */ /* 인터넷익스플로러 */
+  -moz-user-select: none;
+       user-select: none;
+}
+
+#logoda {
+  width: 313px;
+  height: auto;
 }
 
 .section {
   max-width: 59.75rem;
+  min-width: 956px;
   margin: auto;
 }
 
@@ -26,6 +37,7 @@ body {
 }
 .head a {
   margin: 0;
+  cursor: pointer;
 }
 .head .search {
   display: flex;
@@ -104,6 +116,7 @@ body {
   display: flex;
   color: hsla(0, 0%, 100%, 0.92);
   gap: 1.5px;
+  cursor: pointer;
 }
 .categories .category .bar .arrow p {
   background-color: #39342f;
@@ -112,8 +125,12 @@ body {
   font-weight: 500;
 }
 
+.arrow p:hover {
+  opacity: 0.74;
+}
+
 .nts .nt {
-  background-color: hsla(30, 10%, 20%, 0);
+  cursor: pointer;
   display: flex;
   padding: 8px 20px;
   justify-content: space-between;
@@ -136,7 +153,7 @@ body {
 }
 .nts .nt_view {
   font-weight: 300;
-  color: red;
+  color: orangered;
 }
 
 .best .brds {
@@ -148,6 +165,7 @@ body {
   display: flex;
   width: 224px;
   height: 142px;
+  cursor: pointer;
 }
 .best .brds .brd img {
   position: absolute;
@@ -168,7 +186,7 @@ body {
 .best .brds .brd .brd_txt p {
   padding: 8px 16px;
   font-size: 14px;
-  color: rgb(255, 255, 255);
+  color: #fff;
 }
 
 .gals .gal {
@@ -176,6 +194,7 @@ body {
   align-items: center;
   padding: 12px 20px;
   gap: 24px;
+  cursor: pointer;
 }
 .gals .gal img {
   width: 108px;
@@ -197,6 +216,21 @@ body {
   font-size: 12px;
   font-weight: 200;
   opacity: 60%;
+}
+
+.nt:hover {
+  background-color: hsla(30, 10%, 20%, 0.1);
+  transition: all 0.3s ease;
+}
+
+.brd:hover {
+  opacity: 65%;
+  transition: all 0.3s ease;
+}
+
+.gal:hover {
+  background-color: hsla(30, 10%, 20%, 0.1);
+  transition: all 0.3s ease;
 }
 
 .second {

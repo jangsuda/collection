@@ -1,17 +1,20 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
   scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */ /* 인터넷익스플로러 */
+  -moz-user-select: none;
+       user-select: none;
 }
 
 .section {
@@ -92,6 +95,14 @@ body {
      object-fit: cover;
 }
 
+.nav__button a {
+  transition: opacity 0.3s ease;
+}
+
+.nav__button a:hover {
+  opacity: 0.68;
+}
+
 .about__info {
   text-align: center;
   letter-spacing: -0.02em;
@@ -100,7 +111,8 @@ body {
 .about__info h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 3.375rem;
+  font-size: 4rem;
+  padding-bottom: 1.25rem;
 }
 .about__info p {
   font-family: "Spoqa Han Sans Neo", "sans-serif";
@@ -115,6 +127,14 @@ body {
   font-size: 1.25rem;
   color: #fff8f1;
   text-decoration: none;
+}
+
+.enter {
+  transition: background-color 0.3s ease;
+}
+
+.enter:hover {
+  background-color: #827568;
 }
 
 .enter {
@@ -135,7 +155,7 @@ body {
   text-transform: capitalize;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 3.375rem;
+  font-size: 4rem;
   margin-bottom: 4.5rem;
 }
 .about__hover .v-hover {
@@ -170,7 +190,6 @@ body {
 }
 
 #history {
-  height: 108.625rem;
   background-color: #1f1b16;
 }
 #history .about__history {
@@ -182,19 +201,58 @@ body {
   text-transform: capitalize;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 3.375rem;
+  font-size: 4rem;
+}
+#history .about__history_boards {
+  padding-left: 10vw;
+  padding-top: 80px;
+}
+#history .about__history_boards .board {
+  padding-bottom: 120px;
+}
+#history .about__history_boards .board .year {
+  background-color: #725a41;
+  width: 67px;
+  padding: 8px 12px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff8f1;
+  border-radius: 999px;
+  margin-bottom: 20px;
+}
+#history .about__history_boards .board_txt {
+  display: flex;
+}
+#history .about__history_boards .board_txt p {
+  color: #fff8f1;
+  font-size: 1.5rem;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+#history .about__history_boards .board_txt .month {
+  padding-left: 14px;
+  padding-right: 48px;
+}
+#history .about__history_boards .board_txt .did {
+  padding-right: 12px;
+}
+#history .about__history_boards .board_txt .arrow_r {
+  padding: 4px;
+  font-size: 18px;
+}
+#history .about__history_boards .board .txt_gap {
+  padding-bottom: 0px;
+  padding-bottom: 20px;
 }
 
 .about__news {
   text-align: center;
   letter-spacing: -0.02em;
-  color: #1e1a1b;
+  color: #1f1b16;
 }
 .about__news h1 {
   text-transform: capitalize;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 3.375rem;
+  font-size: 4rem;
   margin-bottom: 4.5rem;
 }
 
@@ -203,7 +261,7 @@ body {
   background-color: #d7d7d7;
   text-align: center;
   letter-spacing: -0.02em;
-  color: #1e1a1b;
+  color: #1f1b16;
 }
 .about__servicelink h1 {
   font-family: "Montserrat", sans-serif;
@@ -238,20 +296,20 @@ body {
 
 .footer {
   background-color: grey;
-  color: white;
+  color: #fff8f1;
   font-size: 0.875rem;
   container-type: inline-size;
   container-name: footer;
 }
 .footer a {
   text-decoration: none;
-  color: white;
+  color: #fff8f1;
 }
 .footer li {
   list-style: none;
 }
 .footer svg {
-  fill: white;
+  fill: #fff8f1;
 }
 .footer .wrapper {
   display: grid;

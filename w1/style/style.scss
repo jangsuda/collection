@@ -4,19 +4,25 @@
   $value: calc(#{$base} * (100vw / 1440));
   @return $value;
 }
+
+$dark: #1f1b16;
+$white: #fff8f1;
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
   // color-scheme: light dark;
   scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* 인터넷익스플로러 */
+  user-select: none;
 }
 
 .section {
@@ -32,8 +38,8 @@ body {
   top: 0rem;
   margin: auto;
   padding-inline: 0;
-  background-color: #1f1b16;
-  color: #fff8f1;
+  background-color: $dark;
+  color: $white;
   container-type: inline-size;
   container-name: nav;
   .buttonWrapper {
@@ -50,7 +56,7 @@ body {
       font-size: 1.5rem;
       text-align: center;
       letter-spacing: -0.02em;
-      color: #fff8f1;
+      color: $white;
       text-decoration: none;
     }
   }
@@ -106,15 +112,23 @@ body {
   }
 }
 
+.nav__button a {
+  transition: opacity 0.3s ease;
+}
+
+.nav__button a:hover {
+  opacity: 0.68;
+}
 // section about 시작
 .about__info {
   text-align: center;
   letter-spacing: -0.02em;
-  color: #1f1b16;
+  color: $dark;
   h1 {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    font-size: 3.375rem;
+    font-size: 4rem;
+    padding-bottom: 1.25rem;
   }
   p {
     $p-block-val: 2.5rem;
@@ -130,15 +144,21 @@ body {
     font-weight: 700;
     font-size: 1.25rem;
     // letter-spacing: -0.02em;
-    color: #fff8f1;
+    color: $white;
     text-decoration: none;
   }
+}
+.enter {
+  transition: background-color 0.3s ease;
+}
+.enter:hover {
+  background-color: #827568;
 }
 
 .enter {
   margin-inline: auto;
   width: fit-content;
-  background-color: #1f1b16;
+  background-color: $dark;
   padding: 0.75rem 2.5rem;
   border-radius: 2.125rem;
 }
@@ -147,12 +167,12 @@ body {
 .about__hover {
   text-align: center;
   letter-spacing: -0.02em;
-  color: #1f1b16;
+  color: $dark;
   h1 {
     text-transform: capitalize;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    font-size: 3.375rem;
+    font-size: 4rem;
     margin-bottom: 4.5rem;
   }
   .v-hover {
@@ -188,17 +208,56 @@ body {
   }
 }
 #history {
-  height: 108.625rem;
-  background-color: #1f1b16;
+  background-color: $dark;
   .about__history {
     text-align: center;
     letter-spacing: -0.02em;
-    color: #fff8f1;
+    color: $white;
     h1 {
       text-transform: capitalize;
       font-family: "Montserrat", sans-serif;
       font-weight: 700;
-      font-size: 3.375rem;
+      font-size: 4rem;
+    }
+    &_boards {
+      padding-left: 10vw;
+      padding-top: 80px;
+      .board {
+        padding-bottom: 120px;
+        .year {
+          background-color: #725a41;
+          width: 67px;
+          padding: 8px 12px;
+          font-family: "Montserrat", sans-serif;
+          color: $white;
+
+          border-radius: 999px;
+          margin-bottom: 20px;
+        }
+        &_txt {
+          display: flex;
+          p {
+            color: $white;
+            font-size: 1.5rem;
+            font-family: "Spoqa Han Sans Neo", "sans-serif";
+          }
+          .month {
+            padding-left: 14px;
+            padding-right: 48px;
+          }
+          .did {
+            padding-right: 12px;
+          }
+          .arrow_r {
+            padding: 4px;
+            font-size: 18px;
+          }
+        }
+        .txt_gap {
+          padding-bottom: 0px;
+          padding-bottom: 20px;
+        }
+      }
     }
   }
 }
@@ -206,12 +265,12 @@ body {
 .about__news {
   text-align: center;
   letter-spacing: -0.02em;
-  color: #1e1a1b;
+  color: $dark;
   h1 {
     text-transform: capitalize;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    font-size: 3.375rem;
+    font-size: 4rem;
     margin-bottom: 4.5rem;
   }
 }
@@ -221,7 +280,7 @@ body {
   background-color: #d7d7d7;
   text-align: center;
   letter-spacing: -0.02em;
-  color: #1e1a1b;
+  color: $dark;
   h1 {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
@@ -242,7 +301,7 @@ body {
     font-weight: 700;
     font-size: 1.25rem;
     letter-spacing: -0.02em;
-    color: #fff8f1;
+    color: $white;
     text-decoration: none;
   }
   .about__linkButtons {
@@ -257,19 +316,19 @@ body {
 
 .footer {
   background-color: grey;
-  color: white;
+  color: $white;
   font-size: 0.875rem;
   container-type: inline-size;
   container-name: footer;
   a {
     text-decoration: none;
-    color: white;
+    color: $white;
   }
   li {
     list-style: none;
   }
   svg {
-    fill: white;
+    fill: $white;
   }
   .wrapper {
     display: grid;
