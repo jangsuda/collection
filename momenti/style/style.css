@@ -134,7 +134,9 @@ html {
 }
 
 .enter:hover {
-  background-color: #827568;
+  background-color: #885200;
+  transform: scale(1.05);
+  transition-d: transform 0.5s;
 }
 
 .enter {
@@ -144,6 +146,7 @@ html {
   background-color: #1f1b16;
   padding: 0.75rem 2.5rem;
   border-radius: 2.125rem;
+  box-shadow: 0px 0px 6px gray;
 }
 
 .about__hover {
@@ -211,7 +214,7 @@ html {
   padding-bottom: 120px;
 }
 #history .about__history_boards .board .year {
-  background-color: #725a41;
+  background-color: #885200;
   width: 67px;
   padding: 8px 12px;
   font-family: "Montserrat", sans-serif;

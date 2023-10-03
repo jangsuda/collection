@@ -16,10 +16,7 @@ body {
   max-width: 59.75rem;
   margin: auto;
 }
-#logoda {
-  width: 313px;
-  height: auto;
-}
+
 .head {
   display: flex;
   justify-content: space-between;
@@ -126,10 +123,4 @@ body {
 .board .contents .w660 {
   width: 660px;
   padding-bottom: 24px;
-} /*# sourceMappingURL=style.css.map */
-
-#like {
-  display: flex;
-  margin: auto;
-  padding-bottom: 60px;
-}
+}/*# sourceMappingURL=style.css.map */

@@ -13,18 +13,17 @@ html {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */ /* 인터넷익스플로러 */
   -moz-user-select: none;
-  user-select: none;
+       user-select: none;
 }
 
 body {
-  color: #5f6368ff;
+  color: #1f1b16;
 }
 
 h1 {
   text-align: center;
   padding-top: 12rem;
   font-family: "Montserrat", sans-serif;
-  color: rgba(0, 0, 0, 1);
   font-size: 4.5rem;
   letter-spacing: -2px;
 }
@@ -51,7 +50,7 @@ h1 {
   border: 0;
   font-size: 1.125rem;
   font-family: "Spoqa Han Sans Neo", "sans-serif";
-  box-shadow: 0px 1px 6px 0px #20212447;
+  box-shadow: 0px 0px 8px #e5e7e8;
 }
 .search #name:focus {
   outline: solid;
@@ -70,14 +69,13 @@ h1 {
   display: inline-block;
   padding-block: 0.5rem;
   padding-inline: 1.5rem;
-  border-radius: 4px;
 }
 .works ul li a {
   display: block;
   position: relative;
   padding-bottom: 2rem;
   margin-inline: 0;
-  color: rgba(0, 0, 0, 1);
+  color: #1f1b16;
   font-family: "Spoqa Han Sans Neo", "sans-serif";
 }
 .works ul li a span {
@@ -92,7 +90,7 @@ h1 {
 .works ul li a .box {
   display: flex;
   align-items: center;
-  background-color: #f1f3f4;
+  background-color: #e5e7e8;
   width: 4.5rem;
   height: 4.5rem;
   border-radius: 999px;
@@ -103,9 +101,4 @@ h1 {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 2px;
-} /*# sourceMappingURL=style.css.map */
-
-.works li:hover {
-  background-color: rgba(32, 33, 36, 0.1);
-  transition: background-color 0.2s ease;
-}
+}/*# sourceMappingURL=style.css.map */
