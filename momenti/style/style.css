@@ -20,6 +20,8 @@ html {
 .section {
   max-width: 108rem;
   margin-inline: auto;
+  word-break: keep-all;
+  word-wrap: break-word;
 }
 
 .container {
@@ -108,6 +110,12 @@ html {
   letter-spacing: -0.02em;
   color: #1f1b16;
 }
+.about__info img {
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 36px;
+  margin-top: 80px;
+}
 .about__info h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -116,10 +124,10 @@ html {
 }
 .about__info p {
   font-family: "Spoqa Han Sans Neo", "sans-serif";
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  padding-bottom: 3.75rem;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.4;
+  letter-spacing: -1.5px;
 }
 .about__info a {
   font-family: "Spoqa Han Sans Neo", "sans-serif";

@@ -28,6 +28,8 @@ html {
 .section {
   max-width: 108rem;
   margin-inline: auto;
+  word-break: keep-all;
+  word-wrap: break-word;
 }
 .container {
   margin-inline: 3rem;
@@ -124,6 +126,12 @@ html {
   text-align: center;
   letter-spacing: -0.02em;
   color: $dark;
+  img {
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 36px;
+    margin-top: 80px;
+  }
   h1 {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
@@ -133,11 +141,12 @@ html {
   p {
     $p-block-val: 2.5rem;
     font-family: "Spoqa Han Sans Neo", "sans-serif";
-    font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.4;
+    letter-spacing: -1.5px;
     // padding-top: $p-block-val;
-    padding-bottom: $p-block-val + 1.25rem;
+    // padding-bottom: $p-block-val + 1.25rem;
   }
   a {
     font-family: "Spoqa Han Sans Neo", "sans-serif";
