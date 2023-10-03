@@ -129,14 +129,16 @@ html {
   text-decoration: none;
 }
 
-.enter {
-  transition: background-color 0.3s ease;
-}
-
-.enter:hover {
+#btn:hover {
   background-color: #885200;
   transform: scale(1.05);
-  transition-d: transform 0.5s;
+  transition: background-color 0.3s ease;
+  transition-delay: transform 0.6s;
+}
+
+.about__linkButton:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
 }
 
 .enter {
@@ -146,7 +148,6 @@ html {
   background-color: #1f1b16;
   padding: 0.75rem 2.5rem;
   border-radius: 2.125rem;
-  box-shadow: 0px 0px 6px gray;
 }
 
 .about__hover {
