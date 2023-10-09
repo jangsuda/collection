@@ -5,6 +5,10 @@
   @return $value;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 $dark: #1f1b16;
 $white: #fff8f1;
 
