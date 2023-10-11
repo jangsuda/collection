@@ -205,12 +205,18 @@ li {
 
 .slidebox .slide-control [class*=control] label.prev {
   left: -60px;
-  background: #d9d9d9 url("../img/left.png") center center/50% no-repeat;
+  background: #f2f2f2 url("../img/left.png") center center/50% no-repeat;
 }
 
 .slidebox .slide-control [class*=control] label.next {
   right: -60px;
-  background: #d9d9d9 url("../img/right.png") center center/50% no-repeat;
+  background: #f2f2f2 url("../img/right.png") center center/50% no-repeat;
+}
+
+label.prev:hover,
+label.next:hover {
+  opacity: 0.68;
+  transition: opacity 0.3 ease;
 }
 
 [name=slide] {
