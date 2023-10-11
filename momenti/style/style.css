@@ -147,6 +147,15 @@ html {
   transition: opacity 0.3s ease;
 }
 
+.enter {
+  margin-inline: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #1f1b16;
+  padding: 0.75rem 2.5rem;
+  border-radius: 2.125rem;
+}
+
 ul,
 li {
   list-style: none;
