@@ -206,11 +206,13 @@ li {
 .slidebox .slide-control [class*=control] label.prev {
   left: -60px;
   background: #f2f2f2 url("../img/left.png") center center/50% no-repeat;
+  z-index: 0;
 }
 
 .slidebox .slide-control [class*=control] label.next {
   right: -60px;
   background: #f2f2f2 url("../img/right.png") center center/50% no-repeat;
+  z-index: 0;
 }
 
 label.prev:hover,
