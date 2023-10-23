@@ -185,6 +185,9 @@ html {
 }
 #a_2 .contents .content #c_img2 {
   width: 30.875rem;
+  height: 46.2509rem;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-right: 105.2px;
 }
 #a_2 .contents .content #c_img3 {
