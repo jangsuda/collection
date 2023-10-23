@@ -10,7 +10,7 @@ html {
 }
 
 $dark: #1f1b16;
-$white: #fff8f1;
+$white: #faf8f5;
 
 *,
 *::before,
@@ -142,8 +142,6 @@ html {
     font-size: 28px;
     line-height: 1.4;
     letter-spacing: -1.5px;
-    // padding-top: $p-block-val;
-    // padding-bottom: $p-block-val + 1.25rem;
   }
   a {
     font-family: "Spoqa Han Sans Neo", "sans-serif";
@@ -161,16 +159,57 @@ html {
   transition-delay: transform 0.6s;
 }
 .about__linkButton:hover {
-  opacity: 0.8;
-  transition: opacity 0.3s ease;
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
 }
 
-.enter {
+.enter1 {
   margin-inline: auto;
   width: fit-content;
   background-color: $dark;
   padding: 0.75rem 2.5rem;
   border-radius: 2.125rem;
+}
+
+// about_etc 시작
+#a_2 {
+  background: $dark;
+  .contents {
+    display: flex;
+    flex-direction: column;
+    gap: 6.25rem;
+    .content {
+      display: flex;
+      margin-inline: auto;
+      flex-wrap: wrap;
+      p {
+        color: $white;
+        font-size: 100px;
+        font-family: "Spoqa Han Sans Neo", "sans-serif";
+        font-weight: 500;
+        letter-spacing: -2px;
+      }
+      #c_img1 {
+        width: 30.875rem;
+        height: 30.875rem;
+        object-fit: cover;
+        margin-left: 195.2px;
+      }
+      #c_img2 {
+        width: 30.875rem;
+        margin-right: 105.2px;
+      }
+      #c_img3 {
+        height: 30.875rem;
+        width: 46.2509rem;
+        object-fit: cover;
+        margin-left: 9.0931rem;
+      }
+      #c_txt {
+        text-align: right;
+      }
+    }
+  }
 }
 
 //slideshow 시작
@@ -280,7 +319,6 @@ label.next:hover {
     height: 44.5rem;
     .v1 {
       position: relative;
-      // width: 33rem;
     }
     .v1:hover img:last-child {
       opacity: 0;
@@ -307,6 +345,91 @@ label.next:hover {
     overflow: hidden;
   }
 }
+
+// service 시작
+#service_bg {
+  background-color: #faf8f5;
+}
+.about__service {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+  .service_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    h1 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 2.5rem;
+    }
+    img {
+      width: 3.75rem;
+    }
+  }
+  .txt_p {
+    font-family: "Spoqa Han Sans Neo", "sans-serif";
+  }
+  .service_txt {
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+  }
+  #details {
+    padding-bottom: 2.5rem;
+    font-size: 0.875rem;
+    font-weight: 300;
+  }
+  #detail {
+    color: #3ea6ff;
+    padding-bottom: 5rem;
+  }
+  .test_button {
+    margin-inline: auto;
+    max-width: 12.25rem;
+  }
+  .enter2 {
+    margin-inline: auto;
+    padding: 0.75rem 2.5rem;
+    border: 1px solid $dark;
+    border-radius: 2.125rem;
+    a {
+      text-decoration: none;
+      font-family: "Spoqa Han Sans Neo", "sans-serif";
+      font-size: 1.25rem;
+      font-weight: 500;
+      letter-spacing: -0.025rem;
+      color: $dark;
+    }
+  }
+  .test_button:hover {
+    .enter2 {
+      background-color: $dark;
+      transition: background-color 0.2s ease;
+      a {
+        color: $white;
+        transition: color 0.2s ease;
+      }
+    }
+  }
+  .plugins {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .plugin {
+      max-width: 17.5rem;
+      padding-block: 1rem;
+      padding-inline: 2rem;
+      p {
+        padding-top: 1.5rem;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.4rem;
+      }
+    }
+  }
+}
+
 #history {
   background-color: $dark;
   .about__history {

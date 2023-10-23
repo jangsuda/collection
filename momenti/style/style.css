@@ -39,7 +39,7 @@ html {
   margin: auto;
   padding-inline: 0;
   background-color: #1f1b16;
-  color: #fff8f1;
+  color: #faf8f5;
   container-type: inline-size;
   container-name: nav;
 }
@@ -57,7 +57,7 @@ html {
   font-size: 1.5rem;
   text-align: center;
   letter-spacing: -0.02em;
-  color: #fff8f1;
+  color: #faf8f5;
   text-decoration: none;
 }
 .nav__button {
@@ -131,7 +131,7 @@ html {
   font-family: "Spoqa Han Sans Neo", "sans-serif";
   font-weight: 700;
   font-size: 1.25rem;
-  color: #fff8f1;
+  color: #faf8f5;
   text-decoration: none;
 }
 
@@ -143,17 +143,59 @@ html {
 }
 
 .about__linkButton:hover {
-  opacity: 0.8;
-  transition: opacity 0.3s ease;
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
 }
 
-.enter {
+.enter1 {
   margin-inline: auto;
   width: -moz-fit-content;
   width: fit-content;
   background-color: #1f1b16;
   padding: 0.75rem 2.5rem;
   border-radius: 2.125rem;
+}
+
+#a_2 {
+  background: #1f1b16;
+}
+#a_2 .contents {
+  display: flex;
+  flex-direction: column;
+  gap: 6.25rem;
+}
+#a_2 .contents .content {
+  display: flex;
+  margin-inline: auto;
+  flex-wrap: wrap;
+}
+#a_2 .contents .content p {
+  color: #faf8f5;
+  font-size: 100px;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  font-weight: 500;
+  letter-spacing: -2px;
+}
+#a_2 .contents .content #c_img1 {
+  width: 30.875rem;
+  height: 30.875rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 195.2px;
+}
+#a_2 .contents .content #c_img2 {
+  width: 30.875rem;
+  margin-right: 105.2px;
+}
+#a_2 .contents .content #c_img3 {
+  height: 30.875rem;
+  width: 46.2509rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 9.0931rem;
+}
+#a_2 .contents .content #c_txt {
+  text-align: right;
 }
 
 ul,
@@ -304,13 +346,95 @@ label.next:hover {
   overflow: hidden;
 }
 
+#service_bg {
+  background-color: #faf8f5;
+}
+
+.about__service {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+}
+.about__service .service_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.about__service .service_title h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+}
+.about__service .service_title img {
+  width: 3.75rem;
+}
+.about__service .txt_p {
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+.about__service .service_txt {
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+}
+.about__service #details {
+  padding-bottom: 2.5rem;
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+.about__service #detail {
+  color: #3ea6ff;
+  padding-bottom: 5rem;
+}
+.about__service .test_button {
+  margin-inline: auto;
+  max-width: 12.25rem;
+}
+.about__service .enter2 {
+  margin-inline: auto;
+  padding: 0.75rem 2.5rem;
+  border: 1px solid #1f1b16;
+  border-radius: 2.125rem;
+}
+.about__service .enter2 a {
+  text-decoration: none;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: -0.025rem;
+  color: #1f1b16;
+}
+.about__service .test_button:hover .enter2 {
+  background-color: #1f1b16;
+  transition: background-color 0.2s ease;
+}
+.about__service .test_button:hover .enter2 a {
+  color: #faf8f5;
+  transition: color 0.2s ease;
+}
+.about__service .plugins {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.about__service .plugins .plugin {
+  max-width: 17.5rem;
+  padding-block: 1rem;
+  padding-inline: 2rem;
+}
+.about__service .plugins .plugin p {
+  padding-top: 1.5rem;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4rem;
+}
+
 #history {
   background-color: #1f1b16;
 }
 #history .about__history {
   text-align: center;
   letter-spacing: -0.02em;
-  color: #fff8f1;
+  color: #faf8f5;
 }
 #history .about__history h1 {
   text-transform: capitalize;
@@ -330,7 +454,7 @@ label.next:hover {
   width: 67px;
   padding: 8px 12px;
   font-family: "Montserrat", sans-serif;
-  color: #fff8f1;
+  color: #faf8f5;
   border-radius: 999px;
   margin-bottom: 20px;
 }
@@ -338,7 +462,7 @@ label.next:hover {
   display: flex;
 }
 #history .about__history_boards .board_txt p {
-  color: #fff8f1;
+  color: #faf8f5;
   font-size: 1.5rem;
   font-family: "Spoqa Han Sans Neo", "sans-serif";
 }
@@ -396,7 +520,7 @@ label.next:hover {
   font-weight: 700;
   font-size: 1.25rem;
   letter-spacing: -0.02em;
-  color: #fff8f1;
+  color: #faf8f5;
   text-decoration: none;
 }
 .about__servicelink .about__linkButtons {
@@ -411,20 +535,20 @@ label.next:hover {
 
 .footer {
   background-color: grey;
-  color: #fff8f1;
+  color: #faf8f5;
   font-size: 0.875rem;
   container-type: inline-size;
   container-name: footer;
 }
 .footer a {
   text-decoration: none;
-  color: #fff8f1;
+  color: #faf8f5;
 }
 .footer li {
   list-style: none;
 }
 .footer svg {
-  fill: #fff8f1;
+  fill: #faf8f5;
 }
 .footer .wrapper {
   display: grid;
