@@ -21,7 +21,6 @@ $white: #faf8f5;
 }
 
 html {
-  // color-scheme: light dark;
   scroll-behavior: smooth;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
@@ -30,7 +29,6 @@ html {
 }
 
 .section {
-  max-width: 108rem;
   margin-inline: auto;
   word-break: keep-all;
   word-wrap: break-word;
@@ -172,48 +170,19 @@ html {
 }
 
 // about_etc 시작
-#a_2 {
-  background: $dark;
-  .contents {
-    display: flex;
-    flex-direction: column;
-    gap: 6.25rem;
-    .content {
-      display: flex;
-      margin-inline: auto;
-      flex-wrap: wrap;
-      p {
-        color: $white;
-        font-size: 100px;
-        font-family: "Spoqa Han Sans Neo", "sans-serif";
-        font-weight: 500;
-        letter-spacing: -2px;
-      }
-      #c_img1 {
-        width: 30.875rem;
-        height: 30.875rem;
-        object-fit: cover;
-        margin-left: 195.2px;
-      }
-      #c_img2 {
-        width: 30.875rem;
-        height: 46.2509rem;
-        object-fit: cover;
-        margin-right: 105.2px;
-      }
-      #c_img3 {
-        height: 30.875rem;
-        width: 46.2509rem;
-        object-fit: cover;
-        margin-left: 9.0931rem;
-      }
-      #c_txt {
-        text-align: right;
-      }
-    }
+#etc_bg {
+  background-color: $dark;
+}
+.about_etc {
+  display: flex;
+  justify-content: c;
+  flex-direction: column;
+  gap: 5rem;
+  max-width: 84.625rem;
+  img {
+    width: 100%;
   }
 }
-
 //slideshow 시작
 ul,
 li {

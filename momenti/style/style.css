@@ -22,7 +22,6 @@ html {
 }
 
 .section {
-  max-width: 108rem;
   margin-inline: auto;
   word-break: keep-all;
   word-wrap: break-word;
@@ -156,49 +155,19 @@ html {
   border-radius: 2.125rem;
 }
 
-#a_2 {
-  background: #1f1b16;
+#etc_bg {
+  background-color: #1f1b16;
 }
-#a_2 .contents {
+
+.about_etc {
   display: flex;
+  justify-content: c;
   flex-direction: column;
-  gap: 6.25rem;
+  gap: 5rem;
+  max-width: 84.625rem;
 }
-#a_2 .contents .content {
-  display: flex;
-  margin-inline: auto;
-  flex-wrap: wrap;
-}
-#a_2 .contents .content p {
-  color: #faf8f5;
-  font-size: 100px;
-  font-family: "Spoqa Han Sans Neo", "sans-serif";
-  font-weight: 500;
-  letter-spacing: -2px;
-}
-#a_2 .contents .content #c_img1 {
-  width: 30.875rem;
-  height: 30.875rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin-left: 195.2px;
-}
-#a_2 .contents .content #c_img2 {
-  width: 30.875rem;
-  height: 46.2509rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin-right: 105.2px;
-}
-#a_2 .contents .content #c_img3 {
-  height: 30.875rem;
-  width: 46.2509rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin-left: 9.0931rem;
-}
-#a_2 .contents .content #c_txt {
-  text-align: right;
+.about_etc img {
+  width: 100%;
 }
 
 ul,
