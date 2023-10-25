@@ -17,7 +17,6 @@ body {
   margin: auto;
 }
 .head {
-  //   background-color: grey;
   display: flex;
   justify-content: space-between;
   padding-top: 60px;
@@ -65,8 +64,7 @@ body {
     font-weight: 500;
   }
   hr {
-    border-left: thin solid
-      hsla(0, 0%, 100%, 0.92);
+    border-left: thin solid hsla(0, 0%, 100%, 0.92);
     border-right: 0;
   }
 }

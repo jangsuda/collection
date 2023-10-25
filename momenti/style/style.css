@@ -161,8 +161,8 @@ html {
 
 .about_etc {
   display: flex;
-  justify-content: c;
   flex-direction: column;
+  margin: auto;
   gap: 5rem;
   max-width: 84.625rem;
 }
@@ -467,27 +467,27 @@ label.next:hover {
   margin-bottom: 4.5rem;
 }
 
-.about__servicelink {
-  height: 41.5rem;
-  background-color: #d7d7d7;
+.about__banner {
+  background-color: #f7f7f7;
+  max-width: 81rem;
   text-align: center;
   letter-spacing: -0.02em;
   color: #1f1b16;
+  margin-inline: auto;
 }
-.about__servicelink h1 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 4.25rem;
-  padding-top: 11.25rem;
+.about__banner img {
+  width: 6.75rem;
+  padding-top: 7.5rem;
 }
-.about__servicelink p {
+.about__banner p {
   font-family: "Spoqa Han Sans Neo", "sans-serif";
   font-weight: 600;
   font-size: 3rem;
   line-height: 64px;
-  padding-bottom: 1.5rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
 }
-.about__servicelink a {
+.about__banner a {
   font-family: "Spoqa Han Sans Neo", "sans-serif";
   font-weight: 700;
   font-size: 1.25rem;
@@ -495,7 +495,7 @@ label.next:hover {
   color: #faf8f5;
   text-decoration: none;
 }
-.about__servicelink .about__linkButtons {
+.about__banner .about__linkButtons {
   margin-inline: auto;
   width: -moz-fit-content;
   width: fit-content;
@@ -503,18 +503,18 @@ label.next:hover {
   justify-content: space-between;
   align-items: baseline;
   gap: 1.25rem;
+  padding-bottom: 7.5rem;
 }
 
 .footer {
-  background-color: grey;
-  color: #faf8f5;
+  color: #1f1b16;
   font-size: 0.875rem;
   container-type: inline-size;
   container-name: footer;
 }
 .footer a {
   text-decoration: none;
-  color: #faf8f5;
+  color: #1f1b16;
 }
 .footer li {
   list-style: none;
