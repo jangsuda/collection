@@ -601,6 +601,14 @@ label.next:hover {
     padding: 8px 24px;
   }
 }
+@container banner (width<25rem) {
+  .about__banner a {
+    font-size: 14px;
+  }
+  .about__banner .enter1 {
+    padding: 8px 16px;
+  }
+}
 
 .footer {
   container-type: inline-size;
@@ -653,5 +661,10 @@ label.next:hover {
   }
   .footer li {
     font-size: 12px;
+  }
+}
+@container footer (width < 25rem) {
+  .footer .wrapper {
+    grid-template-columns: 1fr;
   }
 }

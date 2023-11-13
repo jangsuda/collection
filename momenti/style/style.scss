@@ -623,6 +623,14 @@ label.next:hover {
       padding: 8px 24px;
     }
   }
+  @container banner (width<25rem) {
+    a {
+      font-size: 14px;
+    }
+    .enter1 {
+      padding: 8px 16px;
+    }
+  }
 }
 
 .footer {
@@ -678,6 +686,11 @@ label.next:hover {
     }
     li {
       font-size: 12px;
+    }
+  }
+  @container footer (width < 25rem) {
+    .wrapper {
+      grid-template-columns: 1fr;
     }
   }
 }
