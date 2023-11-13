@@ -36,6 +36,7 @@ html {
 .container {
   margin-inline: 3rem;
 }
+
 .nav {
   position: sticky;
   z-index: 1;
@@ -76,6 +77,10 @@ html {
     &__button {
       display: none;
     }
+    .container {
+      margin-inline: 1.5rem;
+    }
+
     // 일정 사이즈되면 menu 보이도록 가운데 정렬 포기..
     .lt820px {
       display: unset;
@@ -87,13 +92,14 @@ html {
     }
   }
 }
+
 .main {
   .container {
     $p-inline-val: 3rem;
     $p-block-val: 11.25rem;
     margin-inline: auto;
-    padding-inline: $p-inline-val;
-    padding-block: $p-block-val;
+    padding-inline: $p-inline-val/2;
+    padding-block: $p-block-val/2;
     &#video {
       padding-inline: unset;
       padding-block: unset;
@@ -123,6 +129,8 @@ html {
   text-align: center;
   letter-spacing: -0.02em;
   color: $dark;
+  container-type: inline-size;
+  container-name: about1;
   img {
     max-width: 100%;
     height: auto;
@@ -131,18 +139,28 @@ html {
   }
   p {
     $p-block-val: 2.5rem;
-    font-family: "Spoqa Han Sans Neo", "sans-serif";
+    font-family: "Spoqa Han Sans Neo",
+      "sans-serif";
     font-weight: 500;
     font-size: 28px;
     line-height: 1.4;
     letter-spacing: -1.5px;
   }
   a {
-    font-family: "Spoqa Han Sans Neo", "sans-serif";
+    font-family: "Spoqa Han Sans Neo",
+      "sans-serif";
     font-weight: 700;
     font-size: 1.25rem;
     color: $white;
     text-decoration: none;
+  }
+  @container about1 (width<60rem) {
+    img {
+      width: 3.75rem;
+    }
+    p {
+      font-size: 24px;
+    }
   }
 }
 
@@ -185,6 +203,9 @@ li {
   list-style: none;
 }
 
+.about__slide {
+  margin-inline: 40px;
+}
 .slidebox {
   max-width: 850px;
   margin: 0 auto;
@@ -213,7 +234,10 @@ li {
   max-width: 100%;
 }
 
-.slidebox .slide-control [class*="control"] label {
+.slidebox
+  .slide-control
+  [class*="control"]
+  label {
   position: absolute;
   z-index: 10;
   top: 63%;
@@ -222,14 +246,22 @@ li {
   border-radius: 50%;
   cursor: pointer;
 }
-.slidebox .slide-control [class*="control"] label.prev {
+.slidebox
+  .slide-control
+  [class*="control"]
+  label.prev {
   left: -60px;
-  background: #f2f2f2 url("../img/left.png") center center / 50% no-repeat;
+  background: #f2f2f2 url("../img/left.png")
+    center center / 50% no-repeat;
   z-index: 0;
 }
-.slidebox .slide-control [class*="control"] label.next {
+.slidebox
+  .slide-control
+  [class*="control"]
+  label.next {
   right: -60px;
-  background: #f2f2f2 url("../img/right.png") center center / 50% no-repeat;
+  background: #f2f2f2 url("../img/right.png")
+    center center / 50% no-repeat;
   z-index: 0;
 }
 
@@ -269,50 +301,6 @@ label.next:hover {
   display: block;
 }
 
-// section hover 시작
-.about__hover {
-  text-align: center;
-  letter-spacing: -0.02em;
-  color: $dark;
-  h1 {
-    text-transform: capitalize;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 4rem;
-    margin-bottom: 4.5rem;
-  }
-  .v-hover {
-    display: block;
-    height: 44.5rem;
-    .v1 {
-      position: relative;
-    }
-    .v1:hover img:last-child {
-      opacity: 0;
-    }
-    .v2 {
-      position: relative;
-      margin-left: 34.5rem;
-    }
-    .v2:hover img:last-child {
-      opacity: 0;
-    }
-    .v3 {
-      position: relative;
-      margin-left: 69rem;
-    }
-    .v3:hover img:last-child {
-      opacity: 0;
-    }
-  }
-  img {
-    display: block;
-    position: absolute;
-    transition: opacity 0.5s;
-    overflow: hidden;
-  }
-}
-
 // service 시작
 #service_bg {
   background-color: #faf8f5;
@@ -322,6 +310,8 @@ label.next:hover {
   flex-direction: column;
   gap: 1.5rem;
   text-align: center;
+  container-type: inline-size;
+  container-name: about4;
   .service_title {
     display: flex;
     justify-content: center;
@@ -336,7 +326,8 @@ label.next:hover {
     }
   }
   .txt_p {
-    font-family: "Spoqa Han Sans Neo", "sans-serif";
+    font-family: "Spoqa Han Sans Neo",
+      "sans-serif";
   }
   .service_txt {
     font-size: 1.75rem;
@@ -362,7 +353,8 @@ label.next:hover {
     border-radius: 2.125rem;
     a {
       text-decoration: none;
-      font-family: "Spoqa Han Sans Neo", "sans-serif";
+      font-family: "Spoqa Han Sans Neo",
+        "sans-serif";
       font-size: 1.25rem;
       font-weight: 500;
       letter-spacing: -0.025rem;
@@ -392,6 +384,94 @@ label.next:hover {
         font-size: 18px;
         font-weight: 400;
         line-height: 1.4rem;
+      }
+    }
+  }
+  @container about4 (width < 60rem) {
+    .txt_p {
+      font-size: 14px;
+    }
+    .service_txt {
+      font-size: 1.5rem;
+      line-height: 2.25rem;
+    }
+    #details {
+      padding-bottom: 36px;
+      font-size: 0.75rem;
+    }
+    #detail {
+      padding-bottom: 5rem;
+    }
+    .test_button {
+      margin-inline: auto;
+      max-width: 11.25rem;
+    }
+    .enter2 {
+      padding: 10px 36px;
+      a {
+        font-size: 18px;
+      }
+    }
+    .plugins {
+      .plugin {
+        max-width: 260px;
+        padding-block: 1.5rem;
+        padding-inline: 1.75rem;
+        p {
+          padding-top: 20px;
+          font-size: 16px;
+          line-height: 1.4rem;
+        }
+        img {
+          width: 56px;
+        }
+      }
+    }
+  }
+  @container about4 (width < 40rem) {
+    .service_title {
+      gap: 8px;
+    }
+    #svlogo {
+      width: 48px;
+    }
+    .txt_p {
+      font-size: 12px;
+    }
+    .service_txt {
+      font-size: 18px;
+      line-height: 26px;
+    }
+    #details {
+      padding-bottom: 28px;
+      font-size: 10px;
+    }
+    #detail {
+      padding-bottom: 2.8rem;
+    }
+    .test_button {
+      margin-inline: auto;
+      max-width: 11.25rem;
+    }
+    .enter2 {
+      padding: 10px 36px;
+      a {
+        font-size: 18px;
+      }
+    }
+    .plugins {
+      .plugin {
+        max-width: 260px;
+        padding-block: 1.5rem;
+        padding-inline: 1.75rem;
+        p {
+          padding-top: 12px;
+          font-size: 16px;
+          line-height: 1.4rem;
+        }
+        img {
+          width: 56px;
+        }
       }
     }
   }
@@ -429,7 +509,8 @@ label.next:hover {
           p {
             color: $white;
             font-size: 1.5rem;
-            font-family: "Spoqa Han Sans Neo", "sans-serif";
+            font-family: "Spoqa Han Sans Neo",
+              "sans-serif";
           }
           .month {
             padding-left: 14px;
@@ -467,18 +548,21 @@ label.next:hover {
 
 .about__banner {
   background-color: #f7f7f7;
-  max-width: 81rem;
+  max-width: 84rem;
   text-align: center;
   letter-spacing: -0.02em;
   color: $dark;
   margin-inline: auto;
+  container-type: inline-size;
+  container-name: banner;
   img {
-    width: 6.75rem;
+    max-width: 85px;
     padding-top: 7.5rem;
   }
   p {
     $p-block-value: 4rem;
-    font-family: "Spoqa Han Sans Neo", "sans-serif";
+    font-family: "Spoqa Han Sans Neo",
+      "sans-serif";
     font-weight: 600;
     font-size: 3rem;
     line-height: 64px;
@@ -486,7 +570,8 @@ label.next:hover {
     padding-bottom: $p-block-value/2;
   }
   a {
-    font-family: "Spoqa Han Sans Neo", "sans-serif";
+    font-family: "Spoqa Han Sans Neo",
+      "sans-serif";
     font-weight: 700;
     font-size: 1.25rem;
     letter-spacing: -0.02em;
@@ -502,27 +587,66 @@ label.next:hover {
     gap: 1.25rem;
     padding-bottom: 7.5rem;
   }
+  @container banner (width<60rem) {
+    img {
+      width: 3.75rem;
+    }
+    p {
+      font-size: 32px;
+      line-height: 48px;
+      $p-block-value: 4rem;
+      padding-top: $p-block-value/2;
+      padding-bottom: $p-block-value/3;
+    }
+    a {
+      font-size: 1rem;
+    }
+    .enter1 {
+      padding: 8px 24px;
+    }
+  }
+  @container banner (width<40rem) {
+    img {
+      width: 2.5rem;
+    }
+    p {
+      font-size: 24px;
+      line-height: 32px;
+      $p-block-value: 4rem;
+      padding-top: $p-block-value/2;
+      padding-bottom: $p-block-value/3;
+    }
+    a {
+      font-size: 14px;
+    }
+    .enter1 {
+      padding: 8px 24px;
+    }
+  }
 }
 
 .footer {
-  // background-color: grey;
-  color: $dark;
-  font-size: 0.875rem;
   container-type: inline-size;
   container-name: footer;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  margin-bottom: 3rem;
+  max-width: 84rem;
+  color: $dark;
+  padding-top: 90px;
   a {
     text-decoration: none;
     color: $dark;
   }
   li {
     list-style: none;
+    font-size: 0.875rem;
   }
   svg {
-    fill: $white;
+    fill: $dark;
   }
   .wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1.5rem;
   }
   h2 {
@@ -542,16 +666,18 @@ label.next:hover {
     align-items: center;
     margin-bottom: 0.5rem;
   }
-  @container footer (width < 71.25rem) {
-    .column:first-of-type {
-      grid-row: 1 / span 2;
-    }
+  @container footer (width < 40rem) {
+    // .column:first-of-type {
+    //   grid-row: 1 / span 2;
+    // }
     .wrapper {
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
     }
-  }
-  .column {
-    padding-inline: 1.5rem;
-    padding-block: 1.5rem;
+    h2 {
+      font-size: 14px;
+    }
+    li {
+      font-size: 12px;
+    }
   }
 }

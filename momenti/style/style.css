@@ -70,6 +70,9 @@ html {
   .nav__button {
     display: none;
   }
+  .nav .container {
+    margin-inline: 1.5rem;
+  }
   .nav .lt820px {
     display: unset;
   }
@@ -82,8 +85,8 @@ html {
 
 .main .container {
   margin-inline: auto;
-  padding-inline: 3rem;
-  padding-block: 11.25rem;
+  padding-inline: 1.5rem;
+  padding-block: 5.625rem;
 }
 .main .container#video {
   padding-inline: unset;
@@ -112,6 +115,8 @@ html {
   text-align: center;
   letter-spacing: -0.02em;
   color: #1f1b16;
+  container-type: inline-size;
+  container-name: about1;
 }
 .about__info img {
   max-width: 100%;
@@ -132,6 +137,14 @@ html {
   font-size: 1.25rem;
   color: #faf8f5;
   text-decoration: none;
+}
+@container about1 (width<60rem) {
+  .about__info img {
+    width: 3.75rem;
+  }
+  .about__info p {
+    font-size: 24px;
+  }
 }
 
 #btn:hover {
@@ -173,6 +186,10 @@ html {
 ul,
 li {
   list-style: none;
+}
+
+.about__slide {
+  margin-inline: 40px;
 }
 
 .slidebox {
@@ -275,49 +292,6 @@ label.next:hover {
   display: block;
 }
 
-.about__hover {
-  text-align: center;
-  letter-spacing: -0.02em;
-  color: #1f1b16;
-}
-.about__hover h1 {
-  text-transform: capitalize;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 4rem;
-  margin-bottom: 4.5rem;
-}
-.about__hover .v-hover {
-  display: block;
-  height: 44.5rem;
-}
-.about__hover .v-hover .v1 {
-  position: relative;
-}
-.about__hover .v-hover .v1:hover img:last-child {
-  opacity: 0;
-}
-.about__hover .v-hover .v2 {
-  position: relative;
-  margin-left: 34.5rem;
-}
-.about__hover .v-hover .v2:hover img:last-child {
-  opacity: 0;
-}
-.about__hover .v-hover .v3 {
-  position: relative;
-  margin-left: 69rem;
-}
-.about__hover .v-hover .v3:hover img:last-child {
-  opacity: 0;
-}
-.about__hover img {
-  display: block;
-  position: absolute;
-  transition: opacity 0.5s;
-  overflow: hidden;
-}
-
 #service_bg {
   background-color: #faf8f5;
 }
@@ -327,6 +301,8 @@ label.next:hover {
   flex-direction: column;
   gap: 1.5rem;
   text-align: center;
+  container-type: inline-size;
+  container-name: about4;
 }
 .about__service .service_title {
   display: flex;
@@ -399,6 +375,90 @@ label.next:hover {
   font-weight: 400;
   line-height: 1.4rem;
 }
+@container about4 (width < 60rem) {
+  .about__service .txt_p {
+    font-size: 14px;
+  }
+  .about__service .service_txt {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
+  .about__service #details {
+    padding-bottom: 36px;
+    font-size: 0.75rem;
+  }
+  .about__service #detail {
+    padding-bottom: 5rem;
+  }
+  .about__service .test_button {
+    margin-inline: auto;
+    max-width: 11.25rem;
+  }
+  .about__service .enter2 {
+    padding: 10px 36px;
+  }
+  .about__service .enter2 a {
+    font-size: 18px;
+  }
+  .about__service .plugins .plugin {
+    max-width: 260px;
+    padding-block: 1.5rem;
+    padding-inline: 1.75rem;
+  }
+  .about__service .plugins .plugin p {
+    padding-top: 20px;
+    font-size: 16px;
+    line-height: 1.4rem;
+  }
+  .about__service .plugins .plugin img {
+    width: 56px;
+  }
+}
+@container about4 (width < 40rem) {
+  .about__service .service_title {
+    gap: 8px;
+  }
+  .about__service #svlogo {
+    width: 48px;
+  }
+  .about__service .txt_p {
+    font-size: 12px;
+  }
+  .about__service .service_txt {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .about__service #details {
+    padding-bottom: 28px;
+    font-size: 10px;
+  }
+  .about__service #detail {
+    padding-bottom: 2.8rem;
+  }
+  .about__service .test_button {
+    margin-inline: auto;
+    max-width: 11.25rem;
+  }
+  .about__service .enter2 {
+    padding: 10px 36px;
+  }
+  .about__service .enter2 a {
+    font-size: 18px;
+  }
+  .about__service .plugins .plugin {
+    max-width: 260px;
+    padding-block: 1.5rem;
+    padding-inline: 1.75rem;
+  }
+  .about__service .plugins .plugin p {
+    padding-top: 12px;
+    font-size: 16px;
+    line-height: 1.4rem;
+  }
+  .about__service .plugins .plugin img {
+    width: 56px;
+  }
+}
 
 #history {
   background-color: #1f1b16;
@@ -469,14 +529,16 @@ label.next:hover {
 
 .about__banner {
   background-color: #f7f7f7;
-  max-width: 81rem;
+  max-width: 84rem;
   text-align: center;
   letter-spacing: -0.02em;
   color: #1f1b16;
   margin-inline: auto;
+  container-type: inline-size;
+  container-name: banner;
 }
 .about__banner img {
-  width: 6.75rem;
+  max-width: 85px;
   padding-top: 7.5rem;
 }
 .about__banner p {
@@ -505,12 +567,49 @@ label.next:hover {
   gap: 1.25rem;
   padding-bottom: 7.5rem;
 }
+@container banner (width<60rem) {
+  .about__banner img {
+    width: 3.75rem;
+  }
+  .about__banner p {
+    font-size: 32px;
+    line-height: 48px;
+    padding-top: 2rem;
+    padding-bottom: 1.3333333333rem;
+  }
+  .about__banner a {
+    font-size: 1rem;
+  }
+  .about__banner .enter1 {
+    padding: 8px 24px;
+  }
+}
+@container banner (width<40rem) {
+  .about__banner img {
+    width: 2.5rem;
+  }
+  .about__banner p {
+    font-size: 24px;
+    line-height: 32px;
+    padding-top: 2rem;
+    padding-bottom: 1.3333333333rem;
+  }
+  .about__banner a {
+    font-size: 14px;
+  }
+  .about__banner .enter1 {
+    padding: 8px 24px;
+  }
+}
 
 .footer {
-  color: #1f1b16;
-  font-size: 0.875rem;
   container-type: inline-size;
   container-name: footer;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  margin-bottom: 3rem;
+  max-width: 84rem;
+  color: #1f1b16;
+  padding-top: 90px;
 }
 .footer a {
   text-decoration: none;
@@ -518,13 +617,14 @@ label.next:hover {
 }
 .footer li {
   list-style: none;
+  font-size: 0.875rem;
 }
 .footer svg {
-  fill: #faf8f5;
+  fill: #1f1b16;
 }
 .footer .wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1.5rem;
 }
 .footer h2 {
@@ -544,15 +644,14 @@ label.next:hover {
   align-items: center;
   margin-bottom: 0.5rem;
 }
-@container footer (width < 71.25rem) {
-  .footer .column:first-of-type {
-    grid-row: 1/span 2;
-  }
+@container footer (width < 40rem) {
   .footer .wrapper {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer h2 {
+    font-size: 14px;
+  }
+  .footer li {
+    font-size: 12px;
   }
 }
-.footer .column {
-  padding-inline: 1.5rem;
-  padding-block: 1.5rem;
-}/*# sourceMappingURL=style.css.map */
