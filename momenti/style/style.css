@@ -25,6 +25,7 @@ html {
   margin-inline: auto;
   word-break: keep-all;
   word-wrap: break-word;
+  min-width: 320px;
 }
 
 .container {
